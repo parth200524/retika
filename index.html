@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Retika ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,sans-serif;overflow-x:hidden;}
+.section{
+height:100vh;
+width:100%;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+.section img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+top:0;
+left:0;
+z-index:-1;
+filter:brightness(60%);
+}
+.text{
+max-width:800px;
+padding:20px;
+}
+h1{font-size:2.5rem;}
+.final{
+background:linear-gradient(135deg,#ff4d88,#ff99c8);
+}
+button{
+padding:15px 40px;
+font-size:1.3rem;
+border:none;
+border-radius:40px;
+margin-top:20px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="section final">
+<div class="text">
+<h1>Retika, Will You Be My Valentine? 💕</h1>
+<p>Scroll down… I made this just for you 🥺💖</p>
+</div>
+</div>
+
+<div class="section">
+<img src="https://via.placeholder.com/1080x1920/ff4d88/ffffff?text=Our+Memories">
+<div class="text">
+<h1>My favorite place in the world</h1>
+<p>is right next to you 💕</p>
+</div>
+</div>
+
+<div class="section final">
+<div class="text">
+<h1>So Retika…</h1>
+<p>Will you be my Valentine? 💖</p>
+<button onclick="yes()">YES ❤️</button>
+<p id="msg" style="margin-top:20px;font-size:1.5rem;"></p>
+<br><br>
+<p>Forever Yours,<br><strong>Parth ❤️</strong></p>
+</div>
+</div>
+
+<script>
+function yes(){
+document.getElementById("msg").innerHTML="You just made me the happiest person alive 💕✨";
+}
+</script>
+
+</body>
+</html>
