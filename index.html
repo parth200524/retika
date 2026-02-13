@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Retika ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,sans-serif;overflow-x:hidden;background:black;}
+.section{
+height:100vh;
+width:100%;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+.section img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+top:0;
+left:0;
+z-index:-1;
+filter:brightness(60%);
+}
+.text{
+max-width:800px;
+padding:20px;
+animation:fade 1.5s ease forwards;
+}
+h1{font-size:2.5rem;}
+p{font-size:1.3rem;margin-top:15px;}
+.final{
+background:linear-gradient(135deg,#ff4d88,#ff99c8);
+}
+button{
+padding:15px 40px;
+font-size:1.3rem;
+border:none;
+border-radius:40px;
+margin-top:20px;
+cursor:pointer;
+}
+@keyframes fade{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+<body>
+
+<div class="section final">
+<div class="text">
+<h1>Retika, Will You Be My Valentine? 💕</h1>
+<p>Scroll slowly… this is our story 🥺💖</p>
+</div>
+</div>
+
+<div class="section">
+<img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1080&q=80">
+<div class="text">
+<h1>My favorite place in the world</h1>
+<p>is right next to you 💕</p>
+</div>
+</div>
+
+<div class="section">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1080&q=80">
+<div class="text">
+<h1>Exploring the world with you</h1>
+<p>makes everything magical ✨</p>
+</div>
+</div>
+
+<div class="section">
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1080&q=80">
+<div class="text">
+<h1>When you're this close</h1>
+<p>nothing else matters 💖</p>
+</div>
+</div>
+
+<div class="section">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1080&q=80">
+<div class="text">
+<h1>You + Me</h1>
+<p>My favorite chaos 😌</p>
+</div>
+</div>
+
+<div class="section final">
+<div class="text">
+<h1>So Retika…</h1>
+<p>Will you be my Valentine? 💖</p>
+<button onclick="yes()">YES ❤️</button>
+<p id="msg" style="margin-top:20px;font-size:1.5rem;"></p>
+<br><br>
+<p>Forever Yours,<br><strong>Parth ❤️</strong></p>
+</div>
+</div>
+
+<script>
+function yes(){
+document.getElementById("msg").innerHTML="You just made me the happiest person alive 💕✨";
+}
+</script>
+
+</body>
+</html>
